@@ -5,7 +5,7 @@ Feature: Open Page of Forms
     Given that the user opens the Forms page
     When he fills in the fields B and clicks on the submit button
       |people|
-      | 2    |
+      | 1    |
     Then he can check that he has correctly saved the answers
 
 

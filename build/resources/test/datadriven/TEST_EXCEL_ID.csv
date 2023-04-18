@@ -1,5 +1,5 @@
-filtro;name;last_name;age;type_document;number_document
-1;Sara;Castano;20;CC;1001227827
-2;Mario;Rodriguez;19;CC;1001234734
-3;Marta;Sierra;23;CC;3443378853
-4;Camilo;Correa;55;CC;3747474299
+filtro;name;email;current_address;permanent_address
+1;Alexis Castano ;AlexisCastano@gmail.com;cll324 sur 10;cll324 sur 10
+2;Sara Montoya;SaraMontoya@gmail.com;cll389 sur 11;cll389 sur 12
+3;Manuela Restrepo;ManuelaRestrepo@gmail.com;cll382 sur 12;cll382 sur 13
+4;Susana Quiroz;SusanaQuiroz@gmail.com;cll394 sur 13;cll394 sur 14

@@ -1,6 +1,7 @@
 package com.co.forms.tasks;
 
 import com.co.forms.models.DataForms;
+import com.co.forms.userinterfaces.HomeFormsPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
@@ -22,19 +23,17 @@ public class HomeFormsTask implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(
-                Click.on(TXT_FIRST_FIELD_NAME),
-                Enter.theValue(dataForms.getName()).into(TXT_FIRST_FIELD_NAME),
-                Click.on(TXT_SECOND_FIELD_LAST_NAME),
-                Enter.theValue(dataForms.getLast_name()).into(TXT_SECOND_FIELD_LAST_NAME),
-                Click.on(TXT_THIRD_FIELD_AGE),
-                Enter.theValue(dataForms.getAge()).into(TXT_THIRD_FIELD_AGE),
-                Click.on(TXT_FOURTH_FIELD_TYPE_OF_DOCUMENT),
-                Enter.theValue(dataForms.getType_document()).into(TXT_FOURTH_FIELD_TYPE_OF_DOCUMENT),
-                Click.on(TXT_FIFTH_FIELD_NUMBER_OF_DOCUMENT),
-                Scroll.to(TXT_FIFTH_FIELD_NUMBER_OF_DOCUMENT),
-                Enter.theValue(dataForms.getNumber_document()).into(TXT_FIFTH_FIELD_NUMBER_OF_DOCUMENT),
-                Click.on(BTN_SUBMIT));
+        actor.attemptsTo(Click.on(TXT_NAME));
+        actor.attemptsTo(Enter.theValue(dataForms.getName()).into(HomeFormsPage.TXT_NAME));
+        actor.attemptsTo(Click.on(TXT_EMAIL));
+        actor.attemptsTo(Enter.theValue(dataForms.getEmail()).into(HomeFormsPage.TXT_EMAIL));
+        actor.attemptsTo(Click.on(TXT_CURRENT_ADDRESS));
+        actor.attemptsTo(Enter.theValue(dataForms.getName()).into(HomeFormsPage.TXT_CURRENT_ADDRESS));
+        actor.attemptsTo(Scroll.to(TXT_PERMANENT_ADDRESS));
+        actor.attemptsTo(Click.on(TXT_PERMANENT_ADDRESS));
+        actor.attemptsTo(Enter.theValue(dataForms.getName()).into(HomeFormsPage.TXT_PERMANENT_ADDRESS));
+        actor.attemptsTo(Click.on(BTN_SUBMIT));
+
 
     }
     public static HomeFormsTask enter(DataForms dataForms){

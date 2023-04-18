@@ -9,30 +9,28 @@ import java.util.Map;
 
 public class DataBuilder implements Builder<DataForms> {
 
-
+//Persoa
     private String name;
-    private String last_name;
-    private String age;
-    private String type_document;
-    private String number_document;
+    private String email;
+    private String currentadress;
+    private String permanentadress;
 
-    public String getName() {return name;}
-
-    public String getLast_name() {
-        return last_name;
+    public String getName() {
+        return name;
     }
 
-    public String getAge() {
-        return age;
+    public String getEmail() {
+        return email;
     }
 
-    public String getType_document() {
-        return type_document;
+    public String getCurrentadress() {
+        return currentadress;
     }
 
-    public String getNumber_document() {
-        return number_document;
+    public String getPermanentadress() {
+        return permanentadress;
     }
+
 
     protected static DataForms objDataForms;
 
@@ -40,10 +38,9 @@ public class DataBuilder implements Builder<DataForms> {
 
     private DataBuilder(Map<String, String> data){
         this.name = data.get("name");
-        this.last_name = data.get("last_name");
-        this.age = data.get("age");
-        this.type_document = data.get("type_document");
-        this.number_document = data.get("number_document");;
+        this.email = data.get("email");
+        this.currentadress = data.get("current address");
+        this.permanentadress = data.get("permanent address");
 
     }
 
